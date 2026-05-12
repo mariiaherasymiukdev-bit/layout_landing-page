@@ -1,3 +1,42 @@
+@import './utils/variables';
+@import './utils/mixins';
+@import './section-title';
+@import './header';
+@import './page';
+@import './menu';
+@import './nav';
+@import './icon';
+@import './topbar';
+@import './about';
+@import './bikes';
+@import './details';
+@import './footer';
+@import './contacts';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-family;
+  line-height: 140%;
+  color: $color-main;
+}
+
 body {
   margin: 0;
+  background: $color-background;
+}
+
+.main {
+  display: grid;
+  row-gap: 96px;
+  padding-block: 96px;
+
+  @include content-padding-inline;
+
+  @include on-tablet {
+    row-gap: 120px;
+    padding-block: 120px;
+  }
 }
