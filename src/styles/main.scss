@@ -26,6 +26,11 @@ html {
 body {
   margin: 0;
   background: $color-background;
+  min-height: 100vh;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
@@ -33,10 +38,13 @@ body {
   row-gap: 96px;
   padding-block: 96px;
 
+  background: $color-background;
+
   @include content-padding-inline;
 
   @include on-tablet {
     row-gap: 120px;
     padding-block: 120px;
   }
+
 }
