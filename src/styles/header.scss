@@ -1,7 +1,12 @@
 .header {
   background-image: url(../images/cover_photo.png);
   background-size: cover;
-  background-position: right -258px top;
+  background-position: left -320px top;
+
+  @include on-tablet {
+    background-size: cover;
+    background-position: center;
+  }
 
   @include on-desktop {
     background-size: cover;
@@ -18,7 +23,7 @@
   }
 
   &__title {
-    margin: 0 0 150px;
+    margin: 0 0 50px;
     text-align: center;
     font-style: bold;
     font-weight: 700;
@@ -28,12 +33,12 @@
 
     @include on-tablet {
       font-size: 64px;
-      margin-bottom: 250px;
+      margin-bottom: 80px;
     }
 
     @include on-desktop {
       font-size: 80px;
-      margin-bottom: 350px;
+      margin-bottom: 160px;
     }
   }
 
