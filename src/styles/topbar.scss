@@ -1,12 +1,12 @@
 .top-bar {
   padding-block: 24px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @include on-tablet {
     padding-block: 32px;
+    margin-bottom: 64px;
   }
 
   &__icons {
@@ -16,6 +16,7 @@
 
   &__logo-link {
     display: flex;
+    gap: 24px;
   }
 
   &__logo {
