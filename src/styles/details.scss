@@ -16,8 +16,6 @@
   &__images {
     @include page-grid;
 
-
-
     margin-bottom: 1px;
   }
 
@@ -48,6 +46,10 @@
     object-fit: cover;
 
     @include hover(transform, scale(1.05));
+
+    @include on-desktop {
+      @include hover(transform, scale(1.02));
+    }
   }
 
   &__title {

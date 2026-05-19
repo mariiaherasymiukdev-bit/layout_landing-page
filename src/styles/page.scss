@@ -6,7 +6,7 @@
   background-color: $color-background;
 
   &:has(.page__menu:target) {
-  overflow: hidden;
+    overflow: hidden;
   }
 
   &__body {
