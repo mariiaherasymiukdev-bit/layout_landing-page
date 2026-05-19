@@ -38,6 +38,8 @@ body {
   row-gap: 96px;
   padding-block: 96px;
 
+  position: relative;
+  z-index: 1;
   background: $color-background;
 
   @include content-padding-inline;
